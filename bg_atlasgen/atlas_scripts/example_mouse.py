@@ -109,7 +109,7 @@ def create_atlas(working_dir, resolution):
 
 if __name__ == "__main__":
     # Generated atlas path:
-    bg_root_dir = Path.home() / "brainglobe_workingdir" / "example"
-    bg_root_dir.mkdir(exist_ok=True)
+    working_dir = Path.home() / "brainglobe_workingdir" / "example"
+    working_dir.mkdir(exist_ok=True, parents=True)
 
-    # create_atlas(working_dir, 100)
+    create_atlas(working_dir, 100)

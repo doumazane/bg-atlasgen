@@ -236,8 +236,7 @@ def create_atlas(working_dir, resolution):
 
 
 if __name__ == "__main__":
-    resolution = 10  # some resolution, in microns (10, 25, 50, 100)
-
+    resolution = 50  # some resolution, in microns (10, 25, 50, 100)
     # Generated atlas path:
     bg_root_dir = Path.home() / "brainglobe_workingdir" / "kim_mouse"
     bg_root_dir.mkdir(exist_ok=True, parents=True)
